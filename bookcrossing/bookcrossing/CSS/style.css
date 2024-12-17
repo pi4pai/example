@@ -1,0 +1,679 @@
+body { 
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    background-color: #f9f9f9;
+    background-image: url('/bookcrossing/img/bk.png'); 
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-bar {
+    position: fixed; 
+    top: 0;                 
+    left: 0;
+    width: 100%;    
+    display: flex;       
+    justify-content: space-between;
+    align-items: center;
+    background-color: #737373;  
+    color: #fff;       
+    padding: 10px 20px;    
+    z-index: 1000;    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.top-bar .date {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+
+}
+
+
+.header-image {
+    position: relative; 
+    text-align: center; 
+}
+
+.header-image img {
+    width: 100%; 
+    height: auto;
+}
+
+.header-image nav {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute; 
+    top: 58.5%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 1.3rem; 
+    padding: 3px 15px;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    color: #cecece; 
+    padding: 3px 15px;
+}
+
+
+section {
+    padding: 1rem 0;
+    margin-top: 5px;
+}
+
+
+h2 {
+    text-align: left;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+    font-size: 2rem;
+    margin-bottom: 10px; 
+    color: #000000; 
+    border-bottom: 2px solid #737373; 
+    padding-bottom: 5px; 
+}
+
+
+#about .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+#about .container div {
+    flex: 0 1 45%; 
+    padding: 10px; 
+}
+
+#about .container img {
+    max-width: 90%; 
+    height: auto;
+    margin-top: 10px; 
+    align-self: flex-start; 
+}
+
+.header-style-1 {
+    text-align: center;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+    font-size: 2rem;
+    margin-bottom: 20px; 
+    color: #ffffff; 
+    border-bottom: 2px solid #ffffff; 
+    padding-bottom: 5px;
+}
+
+.form-container {
+    background-image: url('/bookcrossing/img/photo_4.jpg'); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    margin-left: 550px; 
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-container2 {
+    background-image: url('/bookcrossing/img/photo_4.jpg'); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    margin-left: 550px; 
+    margin-bottom: 100px;
+}
+
+
+
+label {
+    font-family: 'Courier New', monospace;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: left; 
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.register-button {
+    font-family: "Bona Nova SC", serif;
+    width: 80%;
+    display: inline-block; 
+    background-color: #737373; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 1.5rem; 
+    transition: background-color 0.3s ease;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.register-button:hover {
+    background-color: #000000; 
+    color: #e2e3e4;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.books {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.book {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.book:hover {
+    transform: translateY(-5px); 
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.social-media img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); 
+}
+
+.logout-button {
+    display: flex;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+.add-book-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+}
+
+.add-book-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.add-book-form label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.add-book-form input[type="text"],
+.add-book-form input[type="number"],
+.add-book-form input[type="url"],
+.add-book-form input[type="date"],
+.add-book-form input[type="file"],
+.add-book-form textarea,
+.add-book-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.add-book-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.add-book-form input[type="file"] {
+    padding: 5px;
+}
+
+.add-book-form button {
+    font-family: "Bona Nova SC", serif;
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #7373;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-book-form button:hover {
+    background-color: #737373;
+    color: #ffffff;
+}
+
+.add-book-form > *:not(:first-child) {
+    margin-top: 12px;
+}
+
+.book-cover {
+    width: 100px;
+    height: auto;
+}
+.details-form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+}
+
+
+.book-details {
+    display: flex;
+    align-items: flex-start; 
+    gap: 20px; 
+}
+
+
+.book-cover-details {
+    width: 300px;
+    height: auto;
+    margin-top: 100px; 
+}
+
+.book-info {
+    flex: 1; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    width: 700px; 
+    gap: 10px;
+    margin-top: 20px; 
+    margin-left: 0px; 
+}
+.deactivate-button {
+    background-color: #7373; 
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.deactivate-button:hover {
+    background-color: #737373;
+}
+
+
+.back-button {
+    background-color: #7373; 
+    font-family: 'Courier New', monospace;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.back-button:hover {
+    background-color: #737373;
+}
+
+
+.comment-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #7373;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.comment:hover {
+    transform: translateY(-3px);
+}
+
+.comment strong {
+    display: block;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.comment p {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.comment p small {
+    display: block;
+    color: #888;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.add-comment {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-comment h3 {
+    font-family: 'Courier New', monospace;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-comment textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; 
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-comment textarea:focus {
+    outline: none;
+    border-color: #737373;
+    box-shadow: 0 0 8px rgba(115, 115, 115, 0.5);
+}
+
+.add-comment button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #fff;
+    background-color: #737373;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.add-comment button:hover {
+    background-color: #555555;
+}
+
+.add-comment form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.search-form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border-radius: 25px; 
+    border: 1px solid #737373;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-form input:focus {
+    border-color: #7373;
+    outline: none;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn i {
+    font-size: 20px;
+    color: #7373;
+}
+
+.search-btn:hover i {
+    color: #737373;
+}
+.details-button {
+    width: 70%;
+    background-color: #7373;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.details-button:hover {
+    background-color: #73737373;
+    text-decoration: none;
+}
+
+.saved-ads-button {
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+    width: 40%;
+    background-color: #7373;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block; 
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.saved-ads-button:hover {
+    background-color: #73737373;
+    text-decoration: none;
+}
+.saved-ads-button2 {
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(255, 142, 206);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block; 
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.saved-ads-button2:hover {
+    background-color: #73737373;
+    text-decoration: none;
+}
+
+.library {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+    font-size: 2rem;
+    margin-bottom: 10px; 
+    color: #000000;
+    border-bottom: 2px solid #737373; 
+    padding-bottom: 5px; 
+}
+
+footer {
+    background-color: #737373;
+    color: #fff;
+    text-align: center; 
+    padding: 0; 
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+

@@ -1,0 +1,236 @@
+body { 
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    background-color: #f9f9f9;
+    background-image: url('/bookcrossing/img/bk.png');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.top-bar {
+    position: fixed;         
+    top: 0;                 
+    left: 0;
+    width: 100%;            
+    display: flex;           
+    justify-content: space-between;
+    align-items: center;
+    background-color: #737373; 
+    color: #fff;            
+    padding: 10px 20px;      
+    z-index: 1000;          
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.top-bar .date {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+
+}
+
+
+.header-image {
+    position: relative; 
+    text-align: center; 
+}
+
+.header-image img {
+    width: 100%; 
+    height: auto; 
+}
+
+.header-image nav {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute; 
+    top: 58.5%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #737373;
+    text-decoration: none;
+    font-size: 1.3rem; 
+    padding: 3px 15px;
+    position: relative;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #000000; 
+    color: #cecece; 
+    padding: 3px 15px;
+}
+
+
+section {
+    padding: 1rem 0;
+    margin-top: 5px;
+}
+
+
+h2 {
+    text-align: left;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 550;
+    font-size: 2rem;
+    margin-bottom: 10px; 
+    color: #000000; 
+    border-bottom: 2px solid #737373; 
+    padding-bottom: 5px; 
+}
+
+
+.social-media {
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.social-media img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); 
+}
+
+.logout-button {
+    display: flex;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0px;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 3px solid #333;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.popup-content {
+    font-family: 'Courier New', monospace;
+    color: #000000;
+    max-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+
+.cover-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: left; 
+}
+
+.book-details b {
+    font-family: "Bona Nova SC", serif;
+    text-align: center; 
+    font-size: 18px;
+    color: #000000;
+    display: block; 
+}
+
+
+.book-details a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px; 
+}
+
+
+.btn {
+    background-color: #7373;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; 
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.btn:hover {
+    background-color: #73737373;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #737373;
+    color: #fff;
+    text-align: center; 
+    padding: 0; 
+    width: 100%;
+    bottom: 0;
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
